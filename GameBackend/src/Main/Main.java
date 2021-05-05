@@ -20,9 +20,9 @@ public class Main {
 		
 		
 		BaseCustomerService cs= new CustomerManager(new MernisServiceAdapter());
-		Customer customer1 = new Customer(1,"Oğuzhan","TURAN","23180575922","1999");
-		Customer customer2=new Customer(2,"Engin","DEMİROĞ","12345678964","1985");
-		Customer customer3 = new Customer(3, "Mustafa murat", "COŞKUN", "98765432156", "1986");
+		Customer customer1 = new Customer(1,"OÃ°uzhan","TURAN","89746512546","1999");
+		Customer customer2=new Customer(2,"Engin","DEMÃROÃ","12345678964","1985");
+		Customer customer3 = new Customer(3, "Mustafa murat", "COÃKUN", "98765432156", "1986");
 		
 		
 		cs.add(customer1);
@@ -30,7 +30,7 @@ public class Main {
 		cs.add(customer3);
 		cs.delete(customer2);
 		cs.update(customer3);
-		//cs.add(new Customer(2, "ahmet", "BAŞER", "46578912354", "1996"));		
+		//cs.add(new Customer(2, "ahmet", "BAÃER", "46578912354", "1996"));		
 		
 		
 		
@@ -43,8 +43,8 @@ public class Main {
 		//gameService.update(new Game(1,"CS go",80));
 		
 		BaseCampignService baseCampignService = new CampaignManager();
-		Campaign bahar=new Campaign(1,"Bahar kampanyası",20);
-		baseCampignService.add(new Campaign(1, "Bahar kampanyası", 20));
+		Campaign bahar=new Campaign(1,"Bahar kampanyasÃ½",20);
+		baseCampignService.add(new Campaign(1, "Bahar kampanyasÃ½", 20));
 		
 		BaseSaleService baseSaleService=new SaleManager();
 		baseSaleService.sale(new Order(1, customer1, csgo,bahar));
